@@ -9,6 +9,8 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
       <NavLink to="/">Home</NavLink>
       <NavLink to="/products">Products</NavLink>
       <NavLink to="/users">Users</NavLink>
+      <NavLink to="/register">Register</NavLink>
+      <NavLink to="/register2">Register2</NavLink>
     </nav>
   );
 };

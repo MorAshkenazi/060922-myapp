@@ -7,8 +7,11 @@ import Message from "./components/Message";
 import Message2 from "./components/Message2";
 import Message3 from "./components/Message3";
 import Navbar from "./components/Navbar";
+import PageNotFound from "./components/PageNotFound";
 import Posts from "./components/Posts";
 import Products from "./components/Products";
+import Register from "./components/Register";
+import Register2 from "./components/Register2";
 import UserDetails from "./components/UserDetails";
 import Users from "./components/Users";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -38,6 +41,9 @@ function App() {
             <Route path=":id" element={<UserDetails />} />
             {/* <Route path="new" element={<NewUser />} /> */}
           </Route>
+          <Route path="/register" element={<Register />} />
+          <Route path="/register2" element={<Register2 />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <footer>
           <Footer devName={name} devYear={year} />

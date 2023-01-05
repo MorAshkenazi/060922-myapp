@@ -1,11 +1,12 @@
 import { FunctionComponent, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import User from "../interfaces/User";
 
 interface UsersProps {}
 
 const Users: FunctionComponent<UsersProps> = () => {
   let [num, setNum] = useState<number>(0);
-  let [users, setUsers] = useState<any>([]);
+  let [users, setUsers] = useState<User[]>([]);
   // הרצה חד פעמית
   useEffect(() => {
     // console.log("users component");
